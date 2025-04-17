@@ -6,7 +6,7 @@
 [**homework2-4**]
 [**homework2-5**]
 
-[**homework3-1**](Lee-Seong-hun.github.io/homework3-1.jpg)
+[**homework3-1**](Lee-Seong-hun.github.io/homework3-1.png)
 [**homework3-2**]
 [**homework3-3**]
 [**homework3-4**]
