@@ -37,7 +37,13 @@ body {
 }
 
 .main {
+  display: flex;
   margin-top: 30px;
+  gap: 40px;
+}
+
+.left-section {
+  width: 70%;
 }
 
 .left-section h2 {
@@ -45,31 +51,35 @@ body {
   margin-bottom: 12px;
 }
 
-.content-row {
-  display: flex;
-  gap: 20px;
+.left-section img {
+  width: 100%;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
 }
 
-.image-crop {
-  width: 300px;
-  height: 200px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.image-crop img {
-  width: 600px;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-  margin-left: -150px; /* 왼쪽으로 밀어 가로등 중심 부분 보이게 조정 */
-}
-
-.text-snippet {
+.left-section p {
   font-size: 18px;
   line-height: 1.6;
   text-align: justify;
-  flex-grow: 1;
+  margin-bottom: 12px;
+}
+
+.right-section {
+  width: 30%;
+}
+
+.right-section h3 {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+}
+
+.calendar-item {
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+  font-size: 17px;
 }
 </style>
 </head>
@@ -82,20 +92,26 @@ body {
   </div>
 
   <div class="main">
-    <h2>Bing Concert Hall</h2>
-    <div class="content-row">
-      <div class="image-crop">
-        <img src="https://Lee-Seong-hun.github.io/bing.jpg" alt="Bing Concert Hall">
-      </div>
-      <div class="text-snippet">
-        The Bing Concert Hall at Stanford will play a vital role on campus and in the local community. The hall's exceptional acoustics and state-of-the-art technical capabilities will showcase the world's finest performers.
-      </div>
+    <div class="left-section">
+      <h2>Bing Concert Hall</h2>
+      <img src="https://Lee-Seong-hun.github.io/bing.jpg" alt="Bing Concert Hall">
+      <p>The Bing Concert Hall at Stanford will play a vital role on campus and in the local community. The hall's exceptional acoustics and state-of-the-art technical capabilities will showcase the world's finest performers.</p>
+      <p>The hall is scheduled to open early in 2013. The concert hall will have 844 seats in an intimate vineyard-style configuration, with terraced sections wrapping all the way around the stage.</p>
+    </div>
+
+    <div class="right-section">
+      <h3>Calendar</h3>
+      <div class="calendar-item">Harmony for Humanity: Daniel Pearl World Music Concert</div>
+      <div class="calendar-item">Sundays with the St. Lawrence String Quartet</div>
+      <div class="calendar-item">Merce Cunningham Dance Company</div>
+      <div class="calendar-item">Juilliard String Quartet</div>
     </div>
   </div>
 </div>
 
 </body>
 </html>
+
 
 </body>
 </html>
