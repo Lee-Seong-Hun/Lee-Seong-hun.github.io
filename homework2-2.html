@@ -2,20 +2,40 @@
 <html>
 <head>
 <style>
+body {
+  font-family: "Times New Roman", serif;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 table {
-  font-family: arial, sans-serif;
+  width: 50%;
   border-collapse: collapse;
-  width: 40%;
+  margin-top: 10px;
 }
 
-td, th {
-  border: 1px solid #dddddd;
+th, td {
+  border: 1px solid black;
+  padding: 10px;
   text-align: left;
-  padding: 8px;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
+th {
+  background-color: black;
+  color: white;
+}
+
+tr:nth-child(even) td {
+  background-color: #eeeeee;
+}
+
+.caption {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 8px;
 }
 </style>
 </head>
@@ -26,7 +46,7 @@ tr:nth-child(even) {
 <table>
   <tr>
     <th>Geographic Origin</th>
-    <th>Number of Studets</th>
+    <th>Number of Students</th>
   </tr>
   <tr>
     <td>California</td>
@@ -49,7 +69,11 @@ tr:nth-child(even) {
     <td>69</td>
   </tr>
   <tr>
-    <td>Middle East and North Amfrica</td>
+    <td>Africa</td>
+    <td>44</td>
+  </tr>
+  <tr>
+    <td>Middle East and North Africa</td>
     <td>22</td>
   </tr>
   <tr>
@@ -58,6 +82,7 @@ tr:nth-child(even) {
   </tr>
 </table>
 
+<div class="caption">Source: Stanford Facts Website</div>
+
 </body>
 </html>
-
