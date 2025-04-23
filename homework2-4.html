@@ -4,7 +4,17 @@
 <style>
 body {
   font-family: "Times New Roman", serif;
-  margin: 30px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
 }
 
 .header {
@@ -14,7 +24,7 @@ body {
 }
 
 .header-title {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: bold;
   color: red;
 }
@@ -22,79 +32,83 @@ body {
 .edition {
   color: red;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   text-align: right;
 }
 
 .main {
   display: flex;
-  margin-top: 20px;
+  margin-top: 30px;
+  gap: 40px;
 }
 
 .left-section {
-  width: 65%;
+  width: 70%;
 }
 
 .left-section h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 26px;
+  margin-bottom: 12px;
 }
 
 .left-section img {
-  float: left;
-  width: 250px;
-  margin-right: 15px;
-  margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
 }
 
 .left-section p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   text-align: justify;
+  margin-bottom: 12px;
 }
 
 .right-section {
-  width: 35%;
-  padding-left: 20px;
+  width: 30%;
 }
 
 .right-section h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   margin-bottom: 10px;
+  padding-bottom: 4px;
 }
 
 .calendar-item {
   border-bottom: 1px solid black;
-  padding: 6px 0;
-  font-size: 16px;
+  padding: 10px 0;
+  font-size: 17px;
 }
 </style>
 </head>
 <body>
 
-<div class="header">
-  <div class="header-title">Stanford Performing Arts</div>
-  <div class="edition">Autumn 2012<br>Edition</div>
-</div>
-
-<div class="main">
-  <div class="left-section">
-    <h2>Bing Concert Hall</h2>
-    <img src="https://Lee-Seong-hun.github.io/bing.jpg" alt="Bing Concert Hall">
-    <p>The Bing Concert Hall at Stanford will play a vital role on campus and in the local community. The hall's exceptional acoustics and state-of-the-art technical capabilities will showcase the world's finest performers.</p>
-    <p>The hall is scheduled to open early in 2013. The concert hall will have 844 seats in an intimate vineyard-style configuration, with terraced sections wrapping all the way around the stage.</p>
+<div class="wrapper">
+  <div class="header">
+    <div class="header-title">Stanford Performing Arts</div>
+    <div class="edition">Autumn 2012<br>Edition</div>
   </div>
 
-  <div class="right-section">
-    <h3>Calendar</h3>
-    <div class="calendar-item">Harmony for Humanity: Daniel Pearl World Music Concert</div>
-    <div class="calendar-item">Sundays with the St. Lawrence String Quartet</div>
-    <div class="calendar-item">Merce Cunningham Dance Company</div>
-    <div class="calendar-item">Juilliard String Quartet</div>
+  <div class="main">
+    <div class="left-section">
+      <h2>Bing Concert Hall</h2>
+      <img src="https://Lee-Seong-hun.github.io/bing.jpg" alt="Bing Concert Hall">
+      <p>The Bing Concert Hall at Stanford will play a vital role on campus and in the local community. The hall's exceptional acoustics and state-of-the-art technical capabilities will showcase the world's finest performers.</p>
+      <p>The hall is scheduled to open early in 2013. The concert hall will have 844 seats in an intimate vineyard-style configuration, with terraced sections wrapping all the way around the stage.</p>
+    </div>
+
+    <div class="right-section">
+      <h3>Calendar</h3>
+      <div class="calendar-item">Harmony for Humanity: Daniel Pearl World Music Concert</div>
+      <div class="calendar-item">Sundays with the St. Lawrence String Quartet</div>
+      <div class="calendar-item">Merce Cunningham Dance Company</div>
+      <div class="calendar-item">Juilliard String Quartet</div>
+    </div>
   </div>
 </div>
 
 </body>
 </html>
+
