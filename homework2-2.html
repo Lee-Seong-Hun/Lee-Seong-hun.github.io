@@ -28,7 +28,12 @@ th {
   color: white;
 }
 
-tr:nth-child(even) td {
+/* alternating row background: white and light gray */
+tbody tr:nth-child(odd) td {
+  background-color: white;
+}
+
+tbody tr:nth-child(even) td {
   background-color: #eeeeee;
 }
 
@@ -44,43 +49,53 @@ tr:nth-child(even) td {
 <h2>Geographic Origin of Stanford Undergrads</h2>
 
 <table>
-  <tr>
-    <th>Geographic Origin</th>
-    <th>Number of Students</th>
-  </tr>
-  <tr>
-    <td>California</td>
-    <td>2,943</td>
-  </tr>
-  <tr>
-    <td>Other US</td>
-    <td>3,447</td>
-  </tr>
-  <tr>
-    <td>Asia</td>
-    <td>264</td>
-  </tr>
-  <tr>
-    <td>The Americas</td>
-    <td>83</td>
-  </tr>
-  <tr>
-    <td>Europe</td>
-    <td>69</td>
-  </tr>
-  <tr>
-    <td>Africa</td>
-    <td>44</td>
-  </tr>
-  <tr>
-    <td>Middle East and North Africa</td>
-    <td>22</td>
-  </tr>
-  <tr>
-    <td>Pacific Basin</td>
-    <td>6</td>
-  </tr>
+  <thead>
+    <tr>
+      <th>Geographic Origin</th>
+      <th>Number of Students</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>California</td>
+      <td>2,943</td>
+    </tr>
+    <tr>
+      <td>Other US</td>
+      <td>3,447</td>
+    </tr>
+    <tr>
+      <td>Asia</td>
+      <td>264</td>
+    </tr>
+    <tr>
+      <td>The Americas</td>
+      <td>83</td>
+    </tr>
+    <tr>
+      <td>Europe</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>Africa</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>Middle East and North Africa</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Pacific Basin</td>
+      <td>6</td>
+    </tr>
+  </tbody>
 </table>
+
+<div class="caption">Source: Stanford Facts Website</div>
+
+</body>
+</html>
+
 
 <div class="caption">Source: Stanford Facts Website</div>
 
